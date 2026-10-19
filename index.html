@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Virginia Eco-Mechanical HVAC-R Solutions LLC | Virginia Beach, VA</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration to closely match the reference design aesthetic -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              lime: '#c8f331',
+              limeHover: '#b5de28',
+              dark: '#0c0e0c',
+              darkSurface: '#131613',
+              darkCard: '#1a1d18',
+              darkBorder: '#272d24',
+              stoneLight: '#eae8e1',
+              stoneCard: '#f4f3ef',
+              stoneMuted: '#d8d5cc',
+              stoneDark: '#2b2e29'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<!-- Typography and Base Styles -->
+<style data-purpose="typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0c0e0c;
+      color: #e2e4df;
+      overflow-x: hidden;
+      letter-spacing: -0.015em;
+    }
+    h1, h2, h3, h4 {
+      letter-spacing: -0.03em;
+    }
+  </style>
+<!-- Atmospheric Glow & Overlay Styles -->
+<style data-purpose="visual-effects">
+    .glow-lime {
+      box-shadow: 0 0 45px -8px rgba(200, 243, 49, 0.28);
+    }
+    .hero-radial-gradient {
+      background: radial-gradient(circle at 65% 35%, rgba(200, 243, 49, 0.08) 0%, rgba(12, 14, 12, 0.85) 65%, #0c0e0c 100%);
+    }
+    .card-hover-transition {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover-transition:hover {
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+<body class="bg-[#0c0e0c] text-neutral-200 antialiased selection:bg-[#c8f331] selection:text-black">
+<!-- BEGIN: TopNotificationBar -->
+<!-- Micro credentials ribbon matching Airstead top bar -->
+<aside class="w-full border-b border-white/5 bg-[#101310] py-2 text-xs font-medium text-neutral-400" data-purpose="top-credentials-bar">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-y-1">
+<div class="flex items-center space-x-6 overflow-x-auto py-0.5 no-scrollbar">
+<span class="inline-flex items-center gap-1.5 whitespace-nowrap text-neutral-300">
+<span class="h-1.5 w-1.5 rounded-full bg-[#c8f331]"></span>
+          Licensed HVAC-R Master Technicians
+        </span>
+<span class="hidden sm:inline-flex items-center gap-1.5 whitespace-nowrap text-neutral-400">
+<span class="h-1.5 w-1.5 rounded-full bg-[#c8f331]"></span>
+          Virginia Beach &amp; Hampton Roads Coastal Coverage
+        </span>
+<span class="inline-flex items-center gap-1.5 whitespace-nowrap text-neutral-300">
+<span class="h-1.5 w-1.5 rounded-full bg-[#c8f331]"></span>
+          7 Days a Week: 8:00 AM – 5:00 PM
+        </span>
+</div>
+<div class="flex items-center gap-4 text-neutral-300">
+<a class="hover:text-[#c8f331] transition-colors flex items-center gap-1 font-semibold text-white" href="tel:+17572367972">
+<i class="w-3.5 h-3.5 text-[#c8f331]" data-lucide="phone-call"></i>
+          +1 757-236-7972
+        </a>
+</div>
+</div>
+</aside>
+<!-- END: TopNotificationBar -->
+<!-- BEGIN: MainHeader -->
+<!-- Floating architectural pill navbar -->
+<header class="sticky top-0 z-50 w-full backdrop-blur-md bg-[#0c0e0c]/85 border-b border-white/[0.06] transition-all" data-purpose="site-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-10 h-10 rounded-xl bg-[#c8f331] flex items-center justify-center text-black shadow-lg shadow-[#c8f331]/20 group-hover:scale-105 transition-transform">
+<i class="w-5 h-5 text-[#0c0e0c]" data-lucide="leaf"></i>
+</div>
+<div class="flex flex-col">
+<span class="font-extrabold text-lg tracking-tight text-white flex items-center gap-1 leading-none">
+            Virginia Eco-Mechanical
+          </span>
+<span class="text-[10px] tracking-wider uppercase text-neutral-400 font-semibold mt-1">HVAC-R Solutions LLC</span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center space-x-1 rounded-full bg-white/[0.04] px-4 py-1.5 border border-white/[0.06]" data-purpose="navigation-links">
+<a class="px-3.5 py-1.5 text-sm font-medium text-neutral-300 hover:text-white hover:bg-white/[0.06] rounded-full transition-colors" href="#about">About</a>
+<a class="px-3.5 py-1.5 text-sm font-medium text-neutral-300 hover:text-white hover:bg-white/[0.06] rounded-full transition-colors" href="#services">Services</a>
+<a class="px-3.5 py-1.5 text-sm font-medium text-neutral-300 hover:text-white hover:bg-white/[0.06] rounded-full transition-colors" href="#principles">Standards</a>
+<a class="px-3.5 py-1.5 text-sm font-medium text-neutral-300 hover:text-white hover:bg-white/[0.06] rounded-full transition-colors" href="#projects">Projects</a>
+<a class="px-3.5 py-1.5 text-sm font-medium text-neutral-300 hover:text-white hover:bg-white/[0.06] rounded-full transition-colors" href="#contact">Service Area</a>
+</nav>
+<!-- CTA Button Pill -->
+<div class="flex items-center gap-3">
+<a class="hidden lg:flex items-center gap-2 text-xs font-semibold px-3.5 py-2 rounded-full border border-white/10 text-neutral-300 hover:border-white/30 transition-colors" href="tel:+17572367972">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Dispatch Active
+        </a>
+<a class="inline-flex items-center gap-2 bg-[#c8f331] hover:bg-[#b5de28] text-[#0c0e0c] font-bold text-sm px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-[#c8f331]/20" href="#contact">
+<span>Request Service</span>
+<i class="w-4 h-4 stroke-[2.5]" data-lucide="arrow-up-right"></i>
+</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<!-- Hero Section mirroring Airstead's bold architectural framing & mood -->
+<section class="relative overflow-hidden pt-12 pb-24 lg:pt-16 lg:pb-32 border-b border-white/[0.06]" data-purpose="hero-section">
+<!-- Ambient Backdrop Gradient -->
+<div class="absolute inset-0 hero-radial-gradient pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<!-- Hero Top Pill Indicators -->
+<div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-8">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/10 text-xs text-neutral-300 font-medium">
+<i class="w-3.5 h-3.5 text-[#c8f331]" data-lucide="shield-check"></i>
+<span>Licensed HVAC-R Technicians</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/10 text-xs text-neutral-300 font-medium">
+<i class="w-3.5 h-3.5 text-[#c8f331]" data-lucide="gauge"></i>
+<span>Eco-Friendly R-454B &amp; R-32</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/10 text-xs text-neutral-300 font-medium">
+<i class="w-3.5 h-3.5 text-[#c8f331]" data-lucide="clock"></i>
+<span>Prompt Same-Day Diagnostics</span>
+</div>
+</div>
+<!-- Main Grid: Headline & Visual Representation -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Headline & Description (Left Column) -->
+<div class="lg:col-span-7 space-y-8">
+<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.05]">
+            Reliable <span class="text-neutral-400">HVAC-R</span> services that protect every space.
+          </h1>
+<p class="text-lg sm:text-xl text-neutral-400 max-w-2xl font-normal leading-relaxed">
+            Precision residential &amp; commercial air conditioning, refrigeration, and eco-mechanical engineering in Virginia Beach. Serving homes, coastal properties, and commercial kitchens 7 days a week.
+          </p>
+<!-- Dual Button Action Strip -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center gap-2 bg-[#c8f331] hover:bg-[#b5de28] text-[#0c0e0c] font-bold text-base px-7 py-3.5 rounded-full shadow-lg shadow-[#c8f331]/15 transition-all" href="#contact">
+<span>Schedule Service</span>
+<i class="w-4 h-4" data-lucide="arrow-right"></i>
+</a>
+<a class="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white font-medium text-base px-7 py-3.5 rounded-full border border-white/15 transition-all" href="#projects">
+<span>View Coastal Projects</span>
+</a>
+</div>
+<!-- Quick Contact Tagline -->
+<div class="flex items-center gap-4 pt-2 text-sm text-neutral-400">
+<div class="flex -space-x-2">
+<span class="inline-block h-8 w-8 rounded-full ring-2 ring-[#0c0e0c] bg-stone-700 text-stone-200 text-xs flex items-center justify-center font-bold">VB</span>
+<span class="inline-block h-8 w-8 rounded-full ring-2 ring-[#0c0e0c] bg-[#1a1d18] text-[#c8f331] text-xs flex items-center justify-center font-bold border border-[#c8f331]/30">EPA</span>
+<span class="inline-block h-8 w-8 rounded-full ring-2 ring-[#0c0e0c] bg-neutral-800 text-neutral-300 text-xs flex items-center justify-center font-bold">24h</span>
+</div>
+<span>Trusted across Hilltop, Oceanfront, Princess Anne, &amp; Chesapeake</span>
+</div>
+</div>
+<!-- Atmospheric Imagery Card (Right Column) -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-[#141714] aspect-[4/5] max-h-[580px] w-full group">
+<!-- Professional Technician & Precision Unit Photo -->
+<img alt="Licensed HVAC Master Technician inspecting modern cooling condenser in Virginia Beach" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-[0.9] contrast-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCycfMsTue7FDaxg2fhSrIrjuNHxZ0HUF6sAGTLc3Oiwixhhl1ngzi-q8GCjqAK-PgqtQB1--lY940ci0oR88q2aZ1RuIo1wAR4Cp32osDH5Ptim3v_iD4grB73HAO9jzverxFj4P-_2kitZRHbvpdNmcw5V80C2QZkTBA9AM3ortM9-natSp92jz_T18W2rdI02eVYism65ilYBPS9efKwYcSbkq1C9llZMzBJGrABl_gKC5XY-A5uYw"/>
+<!-- Warm cinematic gradient over imagery -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#0c0e0c] via-black/20 to-transparent"></div>
+<!-- Floating Overlay Card on Image -->
+<div class="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-[#121512]/90 backdrop-blur-md border border-white/10 text-white">
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs uppercase tracking-wider text-[#c8f331] font-bold">Direct Response</span>
+<span class="flex items-center gap-1 text-xs text-neutral-400">
+<i class="w-3.5 h-3.5 text-[#c8f331]" data-lucide="map-pin"></i>
+                  Virginia Beach, VA
+                </span>
+</div>
+<p class="text-sm font-semibold text-neutral-200">
+                Operating 7 Days | 8:00 AM – 5:00 PM
+              </p>
+<div class="mt-2 pt-2 border-t border-white/10 flex items-center justify-between text-xs text-neutral-400">
+<span>Address: 2237 Agecroft Rd</span>
+<span class="text-[#c8f331] font-mono">QX8Q+84</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Credentials Ribbon Beneath Hero -->
+<div class="mt-20 pt-8 border-t border-white/[0.08] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 items-center" data-purpose="trust-badges-strip">
+<!-- Badge 1: Ratings -->
+<div class="flex items-center gap-3">
+<div class="flex text-[#c8f331]">
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+</div>
+<div>
+<div class="text-sm font-bold text-white leading-none">4.9 / 5.0</div>
+<div class="text-[11px] text-neutral-400 mt-1">Verified Client Reviews</div>
+</div>
+</div>
+<!-- Badge 2: Certified Technicians -->
+<div class="flex items-center gap-3 border-l border-white/10 pl-4">
+<i class="w-6 h-6 text-[#c8f331]" data-lucide="award"></i>
+<div>
+<div class="text-sm font-bold text-white leading-none">Master HVAC-R</div>
+<div class="text-[11px] text-neutral-400 mt-1">Licensed &amp; Insured VA</div>
+</div>
+</div>
+<!-- Badge 3: EPA 608 Universal -->
+<div class="flex items-center gap-3 border-l border-white/10 pl-4">
+<i class="w-6 h-6 text-[#c8f331]" data-lucide="check-circle-2"></i>
+<div>
+<div class="text-sm font-bold text-white leading-none">EPA 608 Universal</div>
+<div class="text-[11px] text-neutral-400 mt-1">Refrigerant Certified</div>
+</div>
+</div>
+<!-- Badge 4: Upfront Pricing -->
+<div class="flex items-center gap-3 border-l border-white/10 pl-4">
+<i class="w-6 h-6 text-[#c8f331]" data-lucide="file-text"></i>
+<div>
+<div class="text-sm font-bold text-white leading-none">Upfront Estimates</div>
+<div class="text-[11px] text-neutral-400 mt-1">Zero Hidden Surcharges</div>
+</div>
+</div>
+<!-- Badge 5: High Efficiency -->
+<div class="flex items-center gap-3 border-l border-white/10 pl-4 col-span-2 sm:col-span-1">
+<i class="w-6 h-6 text-[#c8f331]" data-lucide="zap"></i>
+<div>
+<div class="text-sm font-bold text-white leading-none">SEER2 &amp; Inverter</div>
+<div class="text-[11px] text-neutral-400 mt-1">Eco-System Upgrades</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: CorePrinciplesSection -->
+<!-- Triple Dark Aesthetic Cards directly inspired by Airstead's 3-card block -->
+<section class="py-24 bg-[#0c0e0c] relative" data-purpose="core-values-cards" id="principles">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mb-14 max-w-2xl">
+<span class="text-xs uppercase tracking-widest text-[#c8f331] font-bold block mb-2">Our Operating Standard</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Engineered for transparency, built for coastal endurance.
+        </h2>
+</div>
+<!-- 3 Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Principle 1: Honest Diagnosis -->
+<div class="rounded-3xl bg-[#141713] border border-white/10 p-8 flex flex-col justify-between card-hover-transition group relative overflow-hidden min-h-[380px]">
+<!-- Background image with deep moody lighting -->
+<div class="absolute inset-0 opacity-25 group-hover:opacity-35 transition-opacity">
+<img alt="Technician performing electrical and diagnostic testing on HVAC panel" class="w-full h-full object-cover filter grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARBSxBGh4oG8NKj89h_RblXbHghn7DdnsABZ9JCmJjI5yhV1WaguY6XtSIMTpwhUrlY4t54Auk5tnFNfz82XnWtc3X99wEP26O_uY-5wvJfcLC_bONegCqwcyz6yBbj4pOnjMdPHJ6cOnCRsEqbBknUMAYpGzHQx-BSboEGUq_Eu7MJWhBZIfm-T33A0TRzbL_hmRKaZfy0M2hIIjsWJi3v2ESySWSnFVtpQH4nd0vcc8KzqLzR3LKGA"/>
+</div>
+<div class="relative z-10">
+<div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#c8f331] mb-6">
+<i class="w-5 h-5" data-lucide="stethoscope"></i>
+</div>
+</div>
+<div class="relative z-10 mt-auto">
+<h3 class="text-2xl font-bold text-white mb-3">Honest diagnosis</h3>
+<p class="text-neutral-400 text-sm leading-relaxed">
+              We tell you exactly what is happening with your HVAC-R equipment without exaggeration, unnecessary part swaps, or aggressive high-pressure sales.
+            </p>
+</div>
+</div>
+<!-- Principle 2: Respect For Every Property -->
+<div class="rounded-3xl bg-[#141713] border border-white/10 p-8 flex flex-col justify-between card-hover-transition group relative overflow-hidden min-h-[380px]">
+<div class="absolute inset-0 opacity-25 group-hover:opacity-35 transition-opacity">
+<img alt="Clean Virginia Beach residence interior and architectural environment" class="w-full h-full object-cover filter grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBBcpiFYhIL3zaoNe7onwKG-XWIfznzg4aQj0Usg5LOLo9lgnq0EoDaO--hszJUFQSwIVqZXZ-cU17ghS11GYuCcCpAURn5-b_MRSX7YeC1DTo8naVbz9euFyX9YA0TAJryvdmemZZD3PwWtIXmJGVPsDvqk8EOtKpAPJvym-CKfjHfoSFVP24UAjpJfS2wy9vztNf6AdYmW0e4MRB5Gfg3JyqdI0FFjvjVuRS9tG48lR5nT-w6p-6Dg"/>
+</div>
+<div class="relative z-10">
+<div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#c8f331] mb-6">
+<i class="w-5 h-5" data-lucide="home"></i>
+</div>
+</div>
+<div class="relative z-10 mt-auto">
+<h3 class="text-2xl font-bold text-white mb-3">Respect for every property</h3>
+<p class="text-neutral-400 text-sm leading-relaxed">
+              Technicians protect your flooring, wear sanitary covers, work cleanly, and leave your residential space or commercial kitchen spotless after every single service visit.
+            </p>
+</div>
+</div>
+<!-- Principle 3: Eco-efficiency guarantee -->
+<div class="rounded-3xl bg-[#141713] border border-white/10 p-8 flex flex-col justify-between card-hover-transition group relative overflow-hidden min-h-[380px]">
+<div class="absolute inset-0 opacity-25 group-hover:opacity-35 transition-opacity">
+<img alt="High efficiency refrigeration and HVAC equipment" class="w-full h-full object-cover filter grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFxU4VTlKx6SuT1ps95VYLylEfNz2x2QjWSy0keOpG9DNHCclgVOdvbJl0lVgOGrHJBMz2QFxzNk-5cocuLdqIlM_1Avsjef6Qrd59E292h9HSBt6_DIJy7_0_O0v6SX1EQIa63uAjcvtoW4DXpjc3OzPl625QCUL79d08__E4uSQF4AD3GleFskIluQ9TbbtqtZdBKBwqQ0LY2CLE6FE1SHbNrULQkOTuORVcKu8GHSawqCLJhstGOA"/>
+</div>
+<div class="relative z-10">
+<div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#c8f331] mb-6">
+<i class="w-5 h-5" data-lucide="leaf"></i>
+</div>
+</div>
+<div class="relative z-10 mt-auto">
+<h3 class="text-2xl font-bold text-white mb-3">Eco-efficiency guarantee</h3>
+<p class="text-neutral-400 text-sm leading-relaxed">
+              We specialize in low-GWP refrigerants (R-454B/R-32), inverter compressor tuning, and heat pump retrofits that minimize carbon footprint and power bills.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CorePrinciplesSection -->
+<!-- BEGIN: PortfolioShowcase -->
+<!-- Architectural Project Showcase with moody lighting & slider arrows -->
+<section class="py-24 bg-[#0f120f] border-y border-white/[0.06]" data-purpose="portfolio-showcase" id="projects">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="text-xs uppercase tracking-widest text-[#c8f331] font-bold block mb-2">Featured Deployments</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Precision mechanical engineering across Virginia Beach.
+          </h2>
+</div>
+<!-- Navigation Arrow Controls -->
+<div class="flex items-center gap-3">
+<button aria-label="Previous Project" class="w-11 h-11 rounded-full border border-white/15 bg-white/5 flex items-center justify-center text-white hover:bg-white/15 transition-colors">
+<i class="w-5 h-5" data-lucide="chevron-left"></i>
+</button>
+<button aria-label="Next Project" class="w-11 h-11 rounded-full border border-white/15 bg-white/5 flex items-center justify-center text-white hover:bg-white/15 transition-colors">
+<i class="w-5 h-5" data-lucide="chevron-right"></i>
+</button>
+</div>
+</div>
+<!-- Horizontal Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 1: High Efficiency Inverter AC -->
+<div class="rounded-3xl bg-[#141714] border border-white/10 overflow-hidden group">
+<div class="relative h-80 overflow-hidden bg-black">
+<img alt="High-Efficiency Inverter AC Systems installation at Virginia Beach residential property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0v1z85WkJrP932SjsgTG4vLHmJR47q3C_wBvkAVmFlSZNCVuWocsigGhV4e9QM1qszD9-fj_6TKc0Huu1bmNPUe5cO3BNiFZTpAg489RLao5UUlletHVWtr5lQUoMonuBaWiKqTLPY8YtJ8vpGon3lWzSwKsoiRHClwiG-wHuK6uP1vZd1KpygOvvxii9yoTiQeM4QJezNIkx3XhSKtPvP2Lmt6Hj4FVU8K65RLHtFGE32nSys3zx7g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#141714] via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-black/60 backdrop-blur-md text-[#c8f331] border border-[#c8f331]/30">
+                Residential Coastal
+              </span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-xl font-bold text-white">Inverter AC &amp; Multi-Zone Heat Pump</h3>
+<span class="text-xs font-mono text-neutral-400">SEER2 20.5</span>
+</div>
+<p class="text-neutral-400 text-sm leading-relaxed mb-6">
+              Complete overhaul of a corroded coastal AC system in Virginia Beach North End. Fitted with epoxy-coated marine condenser coils and whisper-quiet multi-stage inverter.
+            </p>
+<div class="flex items-center justify-between pt-4 border-t border-white/10">
+<span class="text-xs font-medium text-neutral-400 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#c8f331]"></span>
+                Reduced humidity by 42%
+              </span>
+<a class="text-xs font-bold text-[#c8f331] hover:underline flex items-center gap-1" href="#contact">
+                Consult on similar project <i class="w-3.5 h-3.5" data-lucide="arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 2: Commercial Walk-In Cooler & Refrigeration -->
+<div class="rounded-3xl bg-[#141714] border border-white/10 overflow-hidden group">
+<div class="relative h-80 overflow-hidden bg-black">
+<img alt="Commercial Walk-in Cooler and Chiller Retrofit in commercial hospitality kitchen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnqYpCYszjGkI4jHLgjs5ml-ZWQhv_0WoB5gVx7R-U_pI2AUqS6qqUzC-7P4DjkdCRxeYWJME9nNkux7ws4QTuiXIuDzmZbxEmZi4fENt-egip93WDqZ_MxYwjTC42omnEMKN3zRqmXlD_dAO9CWNkstATEtXbCiqbgoXUGF5AxDylNP9zjM8ivrx_A1wPb6qogT0TjleYF-8UFjDhwAkT2mhVkdRMveTylNyXKHrq055sth6QdrREIQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#141714] via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-black/60 backdrop-blur-md text-[#c8f331] border border-[#c8f331]/30">
+                Commercial Refrigeration
+              </span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-xl font-bold text-white">Walk-in Cooler &amp; Chiller Overhaul</h3>
+<span class="text-xs font-mono text-neutral-400">Dual 5HP Compressors</span>
+</div>
+<p class="text-neutral-400 text-sm leading-relaxed mb-6">
+              Emergency restoration and smart thermal expansion valve retrofitting for a prominent Virginia Beach dining establishment, maintaining strict 34°F cold-chain tolerance.
+            </p>
+<div class="flex items-center justify-between pt-4 border-t border-white/10">
+<span class="text-xs font-medium text-neutral-400 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#c8f331]"></span>
+                Same-Day Emergency Restoration
+              </span>
+<a class="text-xs font-bold text-[#c8f331] hover:underline flex items-center gap-1" href="#contact">
+                Commercial Inquiry <i class="w-3.5 h-3.5" data-lucide="arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PortfolioShowcase -->
+<!-- BEGIN: TestimonialSection -->
+<!-- Moody Editorial Testimonial panel matching Airstead quote module -->
+<section class="py-24 bg-[#0c0e0c]" data-purpose="editorial-testimonial" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="rounded-3xl bg-gradient-to-br from-[#161915] to-[#10120f] border border-white/10 p-8 sm:p-14 relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+<div class="lg:col-span-8 space-y-6">
+<div class="flex items-center gap-2">
+<span class="text-[#c8f331] text-xs font-extrabold uppercase tracking-widest">Client Endorsement</span>
+<span class="text-neutral-500">•</span>
+<span class="text-neutral-400 text-xs">Virginia Beach, VA (Agecroft Rd neighborhood)</span>
+</div>
+<blockquote class="text-2xl sm:text-3xl md:text-4xl font-semibold text-white tracking-tight leading-snug">
+              “Their team delivered exceptional HVAC-R services, exceeding our expectations with their professionalism, honest diagnostic appraisal, and meticulous attention to cleanliness.”
+            </blockquote>
+<div class="pt-4 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-[#c8f331] text-[#0c0e0c] font-black flex items-center justify-center text-lg">
+                DK
+              </div>
+<div>
+<div class="font-bold text-white text-base">Dave K.</div>
+<div class="text-xs text-neutral-400">Residential Property Owner &amp; Commercial Investor</div>
+</div>
+</div>
+</div>
+<!-- Secondary Micro-Review Card -->
+<div class="lg:col-span-4 bg-[#1e231c]/60 backdrop-blur-md rounded-2xl border border-white/10 p-6 space-y-4">
+<div class="flex items-center gap-1 text-[#c8f331]">
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+<i class="w-4 h-4 fill-current" data-lucide="star"></i>
+</div>
+<p class="text-sm text-neutral-300 italic">
+              “When our walk-in freezer compressor tripped on a 95-degree Saturday afternoon, Virginia Eco-Mechanical answered immediately. Repaired, recharged, and back in action within two hours.”
+            </p>
+<div class="text-xs font-bold text-white uppercase tracking-wider">
+              — Mark Whitfield, <span class="text-neutral-400 font-normal">Executive Chef, VB Oceanfront</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialSection -->
+<!-- BEGIN: ServicesDetailedSection -->
+<!-- Warm Stone-Grey Architectural Contrast Block matching Airstead lower content -->
+<section class="py-24 bg-[#eae8e1] text-[#1c1f1a]" data-purpose="services-grid" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mb-16">
+<span class="text-xs uppercase tracking-widest text-[#5c6838] font-black block mb-2">Technical Capabilities</span>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-[#111310] tracking-tight">
+          Comprehensive HVAC-R solutions tailored for coastal climates.
+        </h2>
+<p class="mt-4 text-neutral-600 text-base sm:text-lg">
+          The salt air and high summer humidity of coastal Virginia demand specialized materials, anti-corrosive coatings, and calibrated charge levels.
+        </p>
+</div>
+<!-- Services 3-Column Card Set -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<article class="bg-[#f4f3ef] rounded-3xl p-8 border border-[#d8d5cc] shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-[#0c0e0c] text-[#c8f331] flex items-center justify-center mb-6">
+<i class="w-6 h-6" data-lucide="wind"></i>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-[#5c6838]">Precision Service</span>
+<h3 class="text-2xl font-bold text-[#111310] mt-1 mb-3">AC Repair &amp; Diagnostics</h3>
+<p class="text-neutral-600 text-sm leading-relaxed mb-6">
+              Rapid leak detection with digital halogen sniffers, compressor replacements, motor capacitors, TXV valves, and complete electrical fault tracing for residential and commercial AC units.
+            </p>
+</div>
+<ul class="space-y-2 border-t border-[#d8d5cc] pt-4 text-xs font-medium text-neutral-700">
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-[#5c6838]" data-lucide="check"></i> Same-day airflow &amp; refrigerant testing</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-[#5c6838]" data-lucide="check"></i> Coastal coil corrosion mitigation</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-[#5c6838]" data-lucide="check"></i> Upfront transparent repair quotes</li>
+</ul>
+</article>
+<!-- Service Card 2 -->
+<article class="bg-[#f4f3ef] rounded-3xl p-8 border border-[#d8d5cc] shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-[#0c0e0c] text-[#c8f331] flex items-center justify-center mb-6">
+<i class="w-6 h-6" data-lucide="thermometer-snowflake"></i>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-[#5c6838]">Commercial Refrigeration</span>
+<h3 class="text-2xl font-bold text-[#111310] mt-1 mb-3">Refrigeration &amp; Chillers</h3>
+<p class="text-neutral-600 text-sm leading-relaxed mb-6">
+              Heavy-duty cold storage solutions for restaurants, grocery operations, and medical facilities. Specializing in walk-in boxes, display reach-ins, ice machines, and rack chillers.
+            </p>
+</div>
+<ul class="space-y-2 border-t border-[#d8d5cc] pt-4 text-xs font-medium text-neutral-700">
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-[#5c6838]" data-lucide="check"></i> Temperature consistency guarantee</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-[#5c6838]" data-lucide="check"></i> Preventative maintenance agreements</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-[#5c6838]" data-lucide="check"></i> Emergency compressor recovery</li>
+</ul>
+</article>
+<!-- Service Card 3 -->
+<article class="bg-[#f4f3ef] rounded-3xl p-8 border border-[#d8d5cc] shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-[#0c0e0c] text-[#c8f331] flex items-center justify-center mb-6">
+<i class="w-6 h-6" data-lucide="cpu"></i>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-[#5c6838]">System Upgrades</span>
+<h3 class="text-2xl font-bold text-[#111310] mt-1 mb-3">Eco-System Replacement</h3>
+<p class="text-neutral-600 text-sm leading-relaxed mb-6">
+              Engineered replacements designed for maximal SEER2 energy compliance. Inverter heat pumps, ductless mini-splits, and smart variable air distribution engineered for coastal longevity.
+            </p>
+</div>
+<ul class="space-y-2 border-t border-[#d8d5cc] pt-4 text-xs font-medium text-neutral-700">
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-[#5c6838]" data-lucide="check"></i> Low Global Warming Potential refrigerants</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-[#5c6838]" data-lucide="check"></i> Federal tax credit &amp; rebate assistance</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-[#5c6838]" data-lucide="check"></i> 10-year manufacturer warranty options</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<!-- END: ServicesDetailedSection -->
+<!-- BEGIN: ContactSection -->
+<!-- Split Contact & Request Form section mirroring the reference layout exactly -->
+<section class="py-24 bg-[#eae8e1] border-t border-[#d8d5cc] text-[#1c1f1a]" data-purpose="contact-and-dispatch-section" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Business Details, Map Links & Hours -->
+<div class="lg:col-span-5 space-y-8">
+<div>
+<span class="text-xs uppercase tracking-widest text-[#5c6838] font-black block mb-2">Connect With Engineering</span>
+<h2 class="text-4xl sm:text-5xl font-extrabold text-[#111310] tracking-tight">Contact Us</h2>
+<p class="mt-4 text-neutral-600 leading-relaxed">
+              Reach our Virginia Beach dispatch team directly. Whether you need immediate refrigeration attention, residential AC troubleshooting, or a commercial energy audit, we are ready.
+            </p>
+</div>
+<!-- Phone & Direct Dispatch Card -->
+<div class="bg-white rounded-2xl p-6 border border-[#d8d5cc] shadow-sm">
+<div class="text-xs uppercase font-bold text-neutral-400 mb-1">Direct Phone &amp; Emergency Dispatch</div>
+<a class="text-2xl sm:text-3xl font-extrabold text-[#111310] hover:text-[#5c6838] transition-colors flex items-center gap-3" href="tel:+17572367972">
+<i class="w-6 h-6 text-[#5c6838]" data-lucide="phone"></i>
+              +1 757-236-7972
+            </a>
+<p class="text-xs text-neutral-500 mt-2">
+              Staffed locally in Virginia Beach. Direct communication with certified HVAC-R technicians.
+            </p>
+</div>
+<!-- Physical Location & Google Maps Link -->
+<div class="bg-white rounded-2xl p-6 border border-[#d8d5cc] shadow-sm space-y-4">
+<div>
+<div class="text-xs uppercase font-bold text-neutral-400 mb-1">Office &amp; Dispatch Facility</div>
+<p class="text-base font-semibold text-[#111310]">
+                2237 Agecroft Rd, Virginia Beach, VA 23454, United States
+              </p>
+<div class="text-xs text-neutral-500 mt-1 flex items-center gap-2">
+<span>Plus Code: <strong class="font-mono text-neutral-700">QX8Q+84 Virginia Beach, Virginia</strong></span>
+</div>
+</div>
+<!-- Open in Google Maps Link -->
+<a class="inline-flex items-center gap-2 text-xs font-bold text-white bg-[#0c0e0c] hover:bg-neutral-800 px-4 py-2.5 rounded-full transition-colors" href="https://maps.app.goo.gl/PnSLTySdFvgtcXNJ7" rel="noopener noreferrer" target="_blank">
+<i class="w-4 h-4 text-[#c8f331]" data-lucide="map"></i>
+<span>Open in Google Maps (Directions)</span>
+<i class="w-3.5 h-3.5 ml-1" data-lucide="external-link"></i>
+</a>
+</div>
+<!-- Operating Hours & Coverage -->
+<div class="bg-white rounded-2xl p-6 border border-[#d8d5cc] shadow-sm space-y-3">
+<div class="text-xs uppercase font-bold text-neutral-400">Hours of Operation</div>
+<div class="flex items-center justify-between text-sm py-1 border-b border-neutral-100">
+<span class="font-medium text-neutral-700">Monday – Friday</span>
+<span class="font-bold text-[#111310]">8:00 AM – 5:00 PM</span>
+</div>
+<div class="flex items-center justify-between text-sm py-1 border-b border-neutral-100">
+<span class="font-medium text-neutral-700">Saturday &amp; Sunday</span>
+<span class="font-bold text-[#111310]">8:00 AM – 5:00 PM</span>
+</div>
+<div class="text-xs font-semibold text-[#5c6838] flex items-center gap-1.5 pt-1">
+<i class="w-3.5 h-3.5" data-lucide="clock"></i>
+              Open 7 Days a week for scheduled and urgent service calls
+            </div>
+</div>
+<!-- Coverage Chips -->
+<div>
+<div class="text-xs uppercase font-bold text-neutral-500 mb-2">Service Territory</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-white border border-[#d8d5cc] text-neutral-700">Virginia Beach</span>
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-white border border-[#d8d5cc] text-neutral-700">Norfolk</span>
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-white border border-[#d8d5cc] text-neutral-700">Chesapeake</span>
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-white border border-[#d8d5cc] text-neutral-700">Portsmouth</span>
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-white border border-[#d8d5cc] text-neutral-700">Suffolk</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive HVAC-R Service Request Form -->
+<div class="lg:col-span-7">
+<div class="bg-[#fcfbf9] rounded-3xl p-8 sm:p-10 border border-[#d8d5cc] shadow-xl">
+<h3 class="text-2xl sm:text-3xl font-extrabold text-[#111310] tracking-tight">Request HVAC-R Service</h3>
+<p class="text-sm text-neutral-600 mt-2 mb-8">
+              Share details about your cooling or refrigeration system. A certified master technician will review your request and confirm dispatch details.
+            </p>
+<form action="#contact" class="space-y-6" method="POST" onsubmit="event.preventDefault(); alert('Thank you for choosing Virginia Eco-Mechanical. A dispatch specialist will reach out shortly.');">
+<!-- Full Name & Email -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2" for="fullName">Full Name *</label>
+<input class="w-full rounded-xl border-[#d8d5cc] bg-white text-sm px-4 py-3 focus:border-[#0c0e0c] focus:ring-[#0c0e0c] placeholder:text-neutral-400" id="fullName" placeholder="e.g. John Doe" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2" for="emailAddress">Email Address *</label>
+<input class="w-full rounded-xl border-[#d8d5cc] bg-white text-sm px-4 py-3 focus:border-[#0c0e0c] focus:ring-[#0c0e0c] placeholder:text-neutral-400" id="emailAddress" placeholder="e.g. j.doe@example.com" required="" type="email"/>
+</div>
+</div>
+<!-- Phone Number & Service Category -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2" for="phoneNumber">Phone Number *</label>
+<input class="w-full rounded-xl border-[#d8d5cc] bg-white text-sm px-4 py-3 focus:border-[#0c0e0c] focus:ring-[#0c0e0c] placeholder:text-neutral-400" id="phoneNumber" placeholder="(757) 000-0000" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2" for="serviceType">Required Service *</label>
+<select class="w-full rounded-xl border-[#d8d5cc] bg-white text-sm px-4 py-3 focus:border-[#0c0e0c] focus:ring-[#0c0e0c] text-neutral-800" id="serviceType">
+<option value="ac-repair">Air Conditioning Repair &amp; Diagnostics</option>
+<option value="commercial-ref">Commercial Refrigeration / Walk-in Box</option>
+<option value="installation">System Replacement / New Heat Pump</option>
+<option value="maintenance">Eco-Tuneup &amp; Preventative Maintenance</option>
+<option value="other">General Engineering Inquiry</option>
+</select>
+</div>
+</div>
+<!-- Property Type & Address Details -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2" for="propertyAddress">Property Address / City (Hampton Roads)</label>
+<input class="w-full rounded-xl border-[#d8d5cc] bg-white text-sm px-4 py-3 focus:border-[#0c0e0c] focus:ring-[#0c0e0c] placeholder:text-neutral-400" id="propertyAddress" placeholder="Street Address, City (e.g. Virginia Beach, VA)" type="text"/>
+</div>
+<!-- Message / Problem Description -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2" for="serviceMessage">System Symptoms or Project Details *</label>
+<textarea class="w-full rounded-xl border-[#d8d5cc] bg-white text-sm px-4 py-3 focus:border-[#0c0e0c] focus:ring-[#0c0e0c] placeholder:text-neutral-400" id="serviceMessage" placeholder="Describe your issue (e.g. AC unit blowing warm air, walk-in cooler temperature rising, strange buzzing noise, need quote for R-454B replacement)..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Button (Lime Accent) -->
+<button class="w-full py-4 px-6 rounded-2xl bg-[#c8f331] hover:bg-[#b5de28] text-[#0c0e0c] font-extrabold text-base transition-all duration-200 flex items-center justify-center gap-2 shadow-lg shadow-[#c8f331]/20 cursor-pointer" type="submit">
+<span>Submit Service Request</span>
+<i class="w-5 h-5 stroke-[2.5]" data-lucide="arrow-right"></i>
+</button>
+<p class="text-[11px] text-center text-neutral-500">
+                Your data is kept private. Never sold or shared. By submitting, you authorize Virginia Eco-Mechanical to contact you regarding your repair request.
+              </p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ContactSection -->
+<!-- BEGIN: MainFooter -->
+<!-- Deep Dark Architectural Footer matching Airstead -->
+<footer class="bg-[#080908] text-neutral-400 border-t border-white/[0.08] pt-16 pb-12" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Upper Footer Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-white/[0.08]">
+<!-- Brand Description (2 Columns) -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-[#c8f331] flex items-center justify-center text-black">
+<i class="w-5 h-5 text-[#0c0e0c]" data-lucide="leaf"></i>
+</div>
+<span class="font-extrabold text-lg tracking-tight text-white">
+              Virginia Eco-Mechanical
+            </span>
+</div>
+<p class="text-xs text-neutral-400 leading-relaxed max-w-sm">
+            Virginia Eco-Mechanical HVAC-R Solutions LLC provides modern, climate-conscious heating, cooling, and commercial refrigeration engineering throughout Virginia Beach and the greater Hampton Roads coastal region.
+          </p>
+<div class="pt-2 text-xs text-neutral-300 space-y-1">
+<p class="flex items-center gap-2">
+<i class="w-3.5 h-3.5 text-[#c8f331]" data-lucide="map-pin"></i>
+              2237 Agecroft Rd, Virginia Beach, VA 23454
+            </p>
+<p class="flex items-center gap-2">
+<i class="w-3.5 h-3.5 text-[#c8f331]" data-lucide="phone"></i>
+<a class="hover:text-white transition-colors" href="tel:+17572367972">+1 757-236-7972</a>
+</p>
+</div>
+</div>
+<!-- Column 1: Navigation -->
+<div>
+<h4 class="text-xs uppercase font-extrabold tracking-widest text-white mb-4">Navigation</h4>
+<ul class="space-y-2.5 text-xs">
+<li><a class="hover:text-white transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-white transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#principles">Quality Standard</a></li>
+<li><a class="hover:text-white transition-colors" href="#projects">Coastal Projects</a></li>
+<li><a class="hover:text-white transition-colors" href="#contact">Dispatch &amp; Contact</a></li>
+</ul>
+</div>
+<!-- Column 2: Core Services -->
+<div>
+<h4 class="text-xs uppercase font-extrabold tracking-widest text-white mb-4">HVAC-R Services</h4>
+<ul class="space-y-2.5 text-xs">
+<li><a class="hover:text-white transition-colors" href="#services">Emergency AC Repair</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Commercial Walk-in Coolers</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">SEER2 Heat Pump Retrofits</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Refrigerant Leak Detection</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Ductless Mini-Splits</a></li>
+</ul>
+</div>
+<!-- Column 3: Hours & Verification -->
+<div>
+<h4 class="text-xs uppercase font-extrabold tracking-widest text-white mb-4">Availability</h4>
+<p class="text-xs text-neutral-300 font-semibold mb-1">Open 7 Days A Week</p>
+<p class="text-xs text-neutral-400 mb-3">8:00 AM – 5:00 PM</p>
+<a class="inline-flex items-center gap-1.5 text-xs text-[#c8f331] hover:underline" href="https://maps.app.goo.gl/PnSLTySdFvgtcXNJ7" rel="noopener noreferrer" target="_blank">
+<span>View on Google Maps</span>
+<i class="w-3 h-3" data-lucide="external-link"></i>
+</a>
+<div class="mt-4 pt-3 border-t border-white/5 text-[11px] text-neutral-500">
+            Plus Code: QX8Q+84<br/>Virginia Beach, VA
+          </div>
+</div>
+</div>
+<!-- Lower Copyright & Compliance Strip -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
+<div>
+          © 2026 Virginia Eco-Mechanical HVAC-R Solutions LLC. All rights reserved.
+        </div>
+<div class="flex items-center space-x-6 text-neutral-400">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-[#c8f331] font-semibold hover:underline" href="tel:+17572367972">Dispatch: +1 757-236-7972</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- Lucide Icon Initializer Script -->
+<script data-purpose="lucide-icons-init">
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body></html>
+virginia-eco-mechanical-HVAC-
